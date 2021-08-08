@@ -163,6 +163,49 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* grid test full width etc */}
+
+      <div>
+        <div className="container mx-auto my-10 ">
+          <h1 className="text-3xl text-center font-bold">Grid testing</h1>
+
+          <p className="text-sm text-center font-bold">
+            this is grid full width get rid of padding and also a three col grid
+            using the container mx auto classes
+          </p>
+        </div>
+        {/* adding a full width container */}
+        <div className=" mx-auto  ">
+          <div className="grid grid-cols-2 bg-indigo-600 p-4 ">
+            <div className="text-center">
+              <h2 className="uppercase font-bold">grid 1 </h2>
+              <p>test paragraph</p>
+            </div>
+            <div className="text-center">
+              <h2 className="uppercase font-bold">grid 2 </h2>
+              <p>test paragraph</p>
+            </div>
+          </div>
+        </div>
+        {/* adding a auto width container 3 cols */}
+        <div className="mt-10 container mx-auto  ">
+          <div className="grid grid-cols-3 bg-indigo-300 p-4 ">
+            <div className="text-center">
+              <h2 className="uppercase font-bold">grid 1 </h2>
+              <p>test paragraph</p>
+            </div>
+            <div className="text-center">
+              <h2 className="uppercase font-bold">grid 2 </h2>
+              <p>test paragraph</p>
+            </div>
+            <div className="text-center">
+              <h2 className="uppercase font-bold">grid 3 </h2>
+              <p>test paragraph</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
